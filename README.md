@@ -1,51 +1,15 @@
-# Wine Passport Smart Contract
+# Blockchain Product Verification System
 
-A blockchain-based solution for tracking and verifying wine authenticity and quality throughout its lifecycle. This smart contract implements a digital passport system for wine products, allowing authorized producers to register wines and certified inspectors to add quality checks.
+A comprehensive blockchain-based solution for product verification and tracking, featuring both NFT-based authenticity certificates and detailed product passports.
 
-## Overview
+## Project Components
 
-The Wine Passport system provides a transparent and immutable record of wine products, including:
-- Basic wine details (name, producer, harvest year, etc.)
-- Production information
-- Quality control checks
-- Organic certification status
+### 1. NFT Collection
+A smart contract system for creating and managing NFT-based certificates of authenticity for products. These NFTs serve as digital certificates that prove the authenticity and ownership of physical products.
 
-## Features
+[View NFT Collection Documentation](./contracts/NFTCollection/README.md)
 
-- **Role-Based Access Control**
-  - Owner: Can manage producer and inspector roles
-  - Producers: Can create wine passports
-  - Inspectors: Can add quality checks
-  - Public: Can view wine details and quality checks
+### 2. Wine Passport
+A specialized product passport system for the wine industry, enabling detailed tracking of wine production, certification, and quality control throughout the product lifecycle.
 
-- **Wine Passport Creation**
-  - Unique product ID for each wine
-  - Comprehensive wine details including:
-    - Wine name and producer
-    - Harvest year
-    - Grape variety
-    - Region
-    - Alcohol content
-    - Bottling date
-    - Vinification process
-    - Total bottles produced
-    - Organic certification status
-
-- **Quality Control System**
-  - Multiple quality checks per wine
-  - Timestamp for each inspection
-  - Inspector identification
-  - Numerical scoring (0-100)
-  - Detailed inspection notes
-
-## Technical Details
-
-### Prerequisites
-
-- Node.js and npm
-- Hardhat or Truffle
-- OpenZeppelin Contracts
-
-### Installation
-
-1. Clone the repository: 
+[View Wine Passport Documentation](./product-passport/README.md)
